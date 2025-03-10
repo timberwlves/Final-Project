@@ -36,6 +36,7 @@ image_label.pack(pady=10)
 def show_random_game():
 
 
+
     game = random.choice(games_list)
     game_name_label.config(text=game["name"])
 
@@ -146,8 +147,8 @@ view_list=tk.Button(root, text="View Ratings", command = view_rating)
 view_list.pack(pady=5)
 
 # View Unplayed Games Button
-view_list = tk.Button(root, text="View Unplayed Games", command=show_unplayed_games)
-view_list.pack(pady=5)
+view_unplayed = tk.Button(root, text="View Unplayed Games", command=show_unplayed_games)
+view_unplayed.pack(pady=5)
 
 #Show a game when program starts
 show_random_game()
